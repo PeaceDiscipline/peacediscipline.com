@@ -1,0 +1,12 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+  
+:root {
+	font-size: 62.5%;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	--header-height: 6rem;
+	scroll-behavior: smooth;
+}

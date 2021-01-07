@@ -1,0 +1,42 @@
+@media (max-width: 1055px) {
+	header .title {
+		font-size: calc(2vw + 1rem);
+	}
+	#menu {
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		top: 0;
+		left: 100vw;
+		background-image: url(../../images/landingBlur.png);
+		background-position: center;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		transition: left 0.4s ease-in-out;
+	}
+	#burger {
+		display: block;
+	}
+	#menu.open {
+		left: 0;
+		#close-menu {
+			rotate: 360deg;
+		}
+	}
+	#close-menu {
+		display: block;
+		position: absolute;
+		top: 3rem;
+		left: 3rem;
+		transition: rotate 0.5s;
+	}
+
+	.obfus {
+		text-decoration: underline;
+	}
+
+	.credit {
+		justify-content: center;
+	}
+}

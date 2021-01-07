@@ -1,0 +1,19 @@
+change rsources and coaching into toolkit an research
+Home | Toolkit | Events | Research | Contact
+make landing page mobile friendly
+make menu mobile friendly
+make contact scroll down to contact links present on every page
+Sperate javascript for home page and other pages
+update other pages with menu and footer
+
+make menu webcomponent for consistancy
+make drop down links smooth scroll to correct points (Not obscured by header)
+Animate logo on load (see autohotkey.com)
+Allow tabbing through menu options
+fix drop down options in mobile menu
+Make mobile menu work on all pages
+
+About section on the home page about Peace Discipline
+a little infromation about each tab on the home page
+
+Seperate out landing css from general css

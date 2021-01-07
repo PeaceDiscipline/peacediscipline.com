@@ -1,0 +1,37 @@
+.tooltip {
+	position: relative;
+	.tooltip-text {
+		visibility: hidden;
+		position: absolute;
+		z-index: 1;
+		bottom: 125%;
+		// margin-left: auto;
+		// margin-right: auto;
+		// left: 50%;
+		// right: 0;
+
+		background-color: #555;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 0.5rem;
+		font-size: 1.6rem;
+		font-weight: normal;
+		direction: ltr;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			margin-left: -0.5rem;
+			border-width: 0.5rem;
+			border-style: solid;
+			border-color: #555 transparent transparent transparent;		
+		}
+	}
+}
+
+.tooltip.visible .tooltip-text {
+	visibility: visible;
+}
