@@ -1,4 +1,5 @@
-const menu = document.querySelector("#home-header");
+const header = document.querySelector("#home-header");
+const menu = document.querySelector("#menu"); 
 const landing = document.querySelector("#landing");
 
 // ########################################## INTERSECTION OBSERVER ##########################################
@@ -8,9 +9,9 @@ const options = {
 const landingObserver = new IntersectionObserver(function (entries) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
-			menu.classList.add("top");
+			header.classList.add("top");
 		} else {
-			menu.classList.remove("top");
+			header.classList.remove("top");
 		}
 	})
 }, options);
@@ -30,18 +31,13 @@ landingObserver.observe(landing);
 // 	});
 
 // ############################################### MOBILE MENU ###############################################
-const openMenu = (() => {
-	let menu = document.querySelector("#menu");
-	return () => {
-		menu.classList.add("open");
-	}
-})();
-const closeMenu = (() => {
-	let menu = document.querySelector("#menu");
-	return () => {
-		menu.classList.remove("open");
-	}
-})();
+function openMenu() {
+	menu.classList.add("open");
+}
+
+function closeMenu() {
+	menu.classList.remove("open");
+}
 
 let tooltipVisible = false;
 let timesClicked = 0;
