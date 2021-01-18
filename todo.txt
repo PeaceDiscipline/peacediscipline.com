@@ -1,22 +1,26 @@
 Make events scrolling menu
-Sperate javascript for each page
-update other pages with menu and footer
+update menu on all pages RESOURCES -> RESEARCH | EVENTS -> VIDEOS
 fix clicking email in mobile mode causes tooltip to be positioned wrong
+underline current tab
 
 make menu webcomponent for consistancy
-make drop down links smooth scroll to correct points (Not obscured by header)
 Animate logo on load (see autohotkey.com)
 Allow tabbing through menu options
-Make mobile menu work on all pages
 
 About section on the home page about Peace Discipline
 a little infromation about each tab on the home page
 
 Option to share flyer on events page
+check if download links work once site is live
+fix tabbing not working on tool-buttons
+set thumbnail image to logo oon landing background
+position adjusting freedom image below in mobile instead of floating
+
+Confirm changing of Other useful skills to other useful tools
 
 
-
-
-
-
-
+NEXT UPDATE
+- Add stringbean images
+- Add interactive vector/canvas image for adjusting freedom skill
+- Maybe use a light yellow background and or a warning symbol for sections that debunk common advice
+- affiliate links for mentioned books?

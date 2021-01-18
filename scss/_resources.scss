@@ -1,0 +1,38 @@
+#research {
+	text-align: center;
+}
+
+.access-doc {
+	text-transform: capitalize;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	.read, .download {
+		display: inline-block;
+		display: flex;
+		align-items: center;
+		text-decoration: none;
+		cursor: pointer;
+		height: 6rem;
+		background-color: var(--primary-color);
+		transition: transform 0.1s;
+		&:active {
+			transform: scale(0.9);
+		}
+		&:hover {
+			background-color: #6c9799;
+		}
+	}
+	.read {
+		color: white;
+		font-weight: bold;
+		padding: 0 1rem;
+	}
+	.download {
+		padding: 0 0.5rem;
+		margin-left: 0.5rem;
+		img {
+			width: 2rem;
+		}
+	}
+}
