@@ -4,3 +4,56 @@
 	}
 	padding-bottom: 5rem;
 }
+
+h4 {
+	margin-bottom: 1.5rem;
+}
+
+#upcoming {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+	gap: 2rem;
+	.flier {
+		width: 100%;
+		cursor: pointer;
+		transition: all 0.2s;
+		&:hover {
+			scale: 1.06;
+		}
+	}
+}
+
+#modal {
+	display: none;
+	opacity: 0;
+	place-items: center;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.8);
+	.close {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		cursor: pointer;
+	}
+	#modal-content {
+		position: relative;
+		width: 70%;
+	}
+	#modal-flier {
+		width: 100%;
+	}
+	&.visible {
+		display: grid;
+		opacity: 1;
+	}
+}
+
+#coaching {
+	background-color: #eeddad;
+	padding: 1rem;
+}

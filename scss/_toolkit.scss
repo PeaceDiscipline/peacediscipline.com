@@ -97,11 +97,10 @@ body.pushed {
 
 #listening {
 	padding: 0 2rem 2rem 2rem;
-	border: black solid 0.8rem;
+	border: var(--grey) solid 0.6rem;
 	width: 90%;
 	margin: 0 auto;
 	h1, h3 {
-		color: black;
 		text-transform: uppercase;
 		margin: 2rem;
 	}
@@ -118,7 +117,7 @@ body.pushed {
 }
 
 #agenda-format {
-	border: black solid 0.8rem;
+	border: var(--grey) solid 0.6rem;
 	padding: 4rem;
 	margin: 2rem auto;
 	width: 90%;

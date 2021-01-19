@@ -20,7 +20,7 @@
 
 	.title {
 		margin: 1vw 0 3vw 0;
-		color: #ADADAD;
+		color: var(--grey);
 		font-size: 5vw;
 		// animation: name duration timing-function delay iteration-count direction fill-mode;
 		animation: title 2s forwards ease-out;
@@ -31,7 +31,7 @@
 	display: inline-block;
 	width: 70%;
 	font-size: 2vw;
-	color: #ADADAD;
+	color: var(--grey);
 	text-align: center;
 	opacity: 0;
 	animation: quote 2s forwards ease-out 2s;

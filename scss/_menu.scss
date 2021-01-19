@@ -65,6 +65,10 @@ header.top {
 	}
 }
 
+.current-page {
+	border-bottom: white 0.2rem solid;
+}
+
 .drop-down::after {
 	content: url(../../images/arrow.svg);
 }

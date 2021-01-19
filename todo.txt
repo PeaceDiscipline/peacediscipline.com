@@ -1,25 +1,20 @@
 Make events scrolling menu
 fix clicking email in mobile mode causes tooltip to be positioned wrong
-underline current tab
+scroll button menu when clicked
 
 make menu webcomponent for consistancy
 Allow tabbing through menu options
 
-About section on the home page about Peace Discipline
-a little infromation about each tab on the home page
-
-Option to share flyer on events page
 check if download links work once site is live
 fix tabbing not working on tool-buttons
-set thumbnail image to logo on landing background
-position adjusting freedom image below in mobile instead of floating
-
-Confirm changing of Other useful skills to other useful tools
-Where do you want to put the awareness exercises?
-Time-in text is repetitive
 
 NEXT UPDATE
 - Add stringbean images
 - Add interactive vector/canvas image for adjusting freedom skill
 - Maybe use a light yellow background and or a warning symbol for sections that debunk common advice
 - affiliate links for mentioned books?
+- Add something about mailing list
+- Ease transition between quotes on landing page
+- Option to share flyer on events page
+- align text left to right in mobile view at least
+- add toolbox icon
