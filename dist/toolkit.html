@@ -19,7 +19,6 @@
 			<img id="burger" src="../images/burger.png" alt="hamburger menu" onclick="openMenu()">
 			<div id="menu">
 				<img id="close-menu" src="../images/close.png" alt="×" onclick="closeMenu()">
-<!-- Home | Toolkit | Research | Events | Contact -->
 				<div class="drop-down" tabindex="0">
 					<a class="item" href="index.html#landing" onclick="closeMenu()">Home</a>
 					<div class="drop-down-content">
@@ -28,66 +27,66 @@
 					</div>
 				</div>
 				<div class="drop-down" tabindex="0">
-					<a class="item" href="toolkit.html">Toolkit</a>
+					<a class="item" href="#attunement">Toolkit</a>
 					<div class="drop-down-content">
-						<a href="toolkit.html#tool1">tool1</a>
-						<a href="toolkit.html#tool2">tool2</a>
-						<a href="toolkit.html#tool3">tool3</a>
-						<a href="toolkit.html#tool4">tool4</a>
+						<a href="#basic-tools" onclick="closeMenu()">Basic Tools</a>
+						<a href="#containing-skills" onclick="closeMenu()">Containing Skills</a>
+						<a href="#teaching-and-guiding" onclick="closeMenu()">Teaching & Guiding</a>
+						<a href="#other-tools" onclick="closeMenu()">Other Tools</a>
+						<a href="#involving-children" onclick="closeMenu()">Involving Children</a>
+						<a href="#not-working" onclick="closeMenu()">If Skills aren't working</a>
+						<a href="#what-not-to-do" onclick="closeMenu()">What not to do</a>
 					</div>
 				</div>
-				<!-- About, upcoming events (cards that can take the user to the events tab for more info)-->
-				<div class="drop-down" tabindex="0">
-					<a class="item" href="resources.html">Resources</a>
-					<div class="drop-down-content">
-						<a href="resources.html#videos">Videos</a>
-						<a href="resources.html#research">Research</a>
-					</div>
-				</div>
-				<!-- Evidence, Skills, Videos -->
-				<a class="item" tabindex="0" href="events.html">Events</a>
+				<a class="item" href="research.html">Research</a>
+				<a class="item" tabindex="0" href="videos.html">Videos</a>
 				<a class="item" tabindex="0" href="#footer" onclick="closeMenu()">Contact</a>
 			</div>
 		</header>
-		<aside id="toolbox" class="open">
+		<aside id="toolbox">
 			<div id="tool-menu">
 				<div class="atmnt">
-
+					<div class="tool-button" tool="#attunement" tabindex="0">
+						<img src="../images/attunement key.svg" height="45" alt="key" style="pointer-events: none;">
+						Attunement
+					</div>
 				</div>
-				<div class="tool-button" tool="toolkit.html#active-listening" tabindex="0">Active Listening</div>
-				<div class="tool-button" tool="toolkit.html#emotion-coaching" tabindex="0">Emotion Coaching</div>
-				<div class="tool-button" tool="toolkit.html#monitoring" tabindex="0">Monitoring</div>
-				<div class="tool-button" tool="toolkit.html#preparation" tabindex="0">Preparation</div>
-				<div class="tool-button" tool="toolkit.html#structure" tabindex="0">Structure</div>
-				<div class="tool-button" tool="toolkit.html#ritual" tabindex="0">Ritual</div>
-				<div class="tool-button" tool="toolkit.html#praise" tabindex="0">Positive Feedback</div>
-				<div class="tool-button" tool="toolkit.html#adjusting-freedom" tabindex="0">Adjusting Freedom</div>
-				<div class="tool-button" tool="toolkit.html#time-out" tabindex="0">Time Out</div>
-				<div class="tool-button" tool="toolkit.html#making-amends" tabindex="0">Making Amends</div>
-				<div class="tool-button" tool="toolkit.html#introducing-a-cost" tabindex="0">Introducing a cost</div>
-				<div class="tool-button" tool="toolkit.html#when-then" tabindex="0">“When-then” Statements</div>
-				<div class="tool-button" tool="toolkit.html#replacement-behaviors" tabindex="0">Replacement Behaviors</div>
-				<div class="tool-button" tool="toolkit.html#modeling" tabindex="0">Modeling</div>
-				<div class="tool-button" tool="toolkit.html#prompting" tabindex="0">Prompting</div>
-				<div class="tool-button" tool="toolkit.html#rewind" tabindex="0">“Rewind”</div>
-				<div class="tool-button" tool="toolkit.html#remedial-stories" tabindex="0">Remedial Stories</div>
-				<div class="tool-button" tool="toolkit.html#distraction" tabindex="0">Distraction</div>
-				<div class="tool-button" tool="toolkit.html#reward" tabindex="0">Reward</div>
-				<div class="tool-button" tool="toolkit.html#otr" tabindex="0">Opportunities to Respond</div>
-				<div class="tool-button" tool="toolkit.html#meet-and-solve" tabindex="0">Meetings and Problem Solving</div>
-				<div class="tool-button" tool="toolkit.html#self-management" tabindex="0">Self-Management</div>
-				<div class="tool-button" tool="toolkit.html#report-card" tabindex="0">Daily Report Card</div>
+				<div class="tool-button" tool="#active-listening" tabindex="0">Active Listening</div>
+				<div class="tool-button" tool="#emotion-coaching" tabindex="0">Emotion Coaching</div>
+				<div class="tool-button" tool="#time-in" tabindex="0">Time-in</div>
+				<div class="tool-button" tool="#monitoring" tabindex="0">Monitoring</div>
+				<div class="tool-button" tool="#preparation" tabindex="0">Preparation</div>
+				<div class="tool-button" tool="#structure" tabindex="0">Structure</div>
+				<div class="tool-button" tool="#ritual" tabindex="0">Ritual</div>
+				<div class="tool-button" tool="#praise" tabindex="0">Positive Feedback</div>
+				<div class="tool-button" tool="#adjusting-freedom" tabindex="0">Adjusting Freedom</div>
+				<div class="tool-button" tool="#time-out" tabindex="0">Time Out</div>
+				<div class="tool-button" tool="#making-amends" tabindex="0">Making Amends</div>
+				<div class="tool-button" tool="#introducing-a-cost" tabindex="0">Introducing a cost</div>
+				<div class="tool-button" tool="#when-then" tabindex="0">“When-then” Statements</div>
+				<div class="tool-button" tool="#replacement-behaviors" tabindex="0">Replacement Behaviors</div>
+				<div class="tool-button" tool="#modeling" tabindex="0">Modeling</div>
+				<div class="tool-button" tool="#prompting" tabindex="0">Prompting</div>
+				<div class="tool-button" tool="#rewind" tabindex="0">“Rewind”</div>
+				<div class="tool-button" tool="#remedial-stories" tabindex="0">Remedial Stories</div>
+				<div class="tool-button" tool="#distraction" tabindex="0">Distraction</div>
+				<div class="tool-button" tool="#reward" tabindex="0">Reward</div>
+				<div class="tool-button" tool="#otr" tabindex="0">Opportunities to Respond</div>
+				<div class="tool-button" tool="#meet-and-solve" tabindex="0">Meetings and Problem Solving</div>
+				<div class="tool-button" tool="#self-management" tabindex="0">Self-Management</div>
+				<div class="tool-button" tool="#report-card" tabindex="0">Daily Report Card</div>
 				<div class="dont-use">
-					<a class="tool-button" tabindex="0"></a>
-					<a class="tool-button" tabindex="0"></a>
-
+					<a class="tool-button" tool="#what-not-to-do" tabindex="0">
+						<img src="../images/ex.svg" height="60" alt="red ex" style="pointer-events: none;">
+						What not to do
+					</a>
 				</div>
 			</div>
 			<div class="tab" onclick="toggleToolbox()">
 
 			</div>
 		</aside>
-		<section id="attunement">
+		<section id="attunement" class="tool">
 			<h1>Attunement</h1>
 			<p>Discipline tools are not enough on their own. They need to be used with attunement to the
 			child. Attunement means being in tune with the child and matching your responses to their
@@ -112,13 +111,13 @@
 			
 			<p>Attunement is the key to successful use of this toolkit. To improve attunement, work on
 			your relationship with your child. Spend quality time with them and use skills such as
-			<a href="">active listening</a> and <a href="">monitoring</a>.</p>
+			<a href="">active listening</a> and <a href="#monitoring">monitoring</a>.</p>
 		</section>
 		<section id="tools">
 			<h1>Discipline Tool Kit</h1>
 			<div id="basic-tools" class="skill-section">
 				<h2>Basic Tools</h2>
-				<article id="active-listening">
+				<article id="active-listening" class="tool">
 					<h3>Active Listening</h3>
 					<p>This is possibly the most important tool in the toolkit. Most people think they already know
 					and use this skill. However, once we understand it better, we realize that people generally
@@ -196,7 +195,7 @@
 						<p>You accept my gift of gratitude by telling me how good it makes you feel to know you have been helpful.</p>
 					</div>
 				</article>
-				<article id="emotion-coaching">
+				<article id="emotion-coaching" class="tool">
 					<h3>Emotion Coaching</h3>
 	
 					<p>It’s important to talk to children about emotions, so they can learn that feelings are
@@ -210,7 +209,15 @@
 	
 					<p>To find out more, read the section on <a href="">communication</a> in the research summary.</p>
 				</article>
-				<article id="monitoring">
+				<article id="time-in" class="tool">
+					<h3>Time-in</h3>
+
+					<p>Time-in is often considered the opposite to time-out, and can be defined as quality time with parents during which there is physical touch and ample expressions of love, care, compassion and praise. Family rituals such as bed-time stories may be a good way to increase time-in. Research shows that children who get adequate time-in, behave better. This makes sense when we consider that problem behavior is often a child’s attempt to gain more attention and care. Time-in should be unconditional, in other words given freely - the child should not have to earn it.</p>
+
+					<p>Time-in is often considered the opposite to time-out, in fact the term was coined by researchers who observed that time-out didn’t work well unless there was good quality “time-in”. In other words, if your child does not have a good time with you generally, it’s not much of a deterrent to be sent to time-out. This has been misunderstood and distorted, resulting in the well-meaning advice often given to parents to “use time-in instead of time-out”. While increasing time-in is very good advice, it should not be seen as a substitute for time-out. Time-in is an antecedent intervention, in other words it is something we do to <em>prevent</em> problem behavior, while timeout is a tool we can use <em>during</em> (to interrupt), or immediately <em>after</em> a challenging behavior. For example, time-out can be useful to handle aggression. If we use regular time-in, there should be fewer aggressive situations, but once there is aggression one needs tools like time-out to deal with it. Time-in does not usually fit at this point. Once the child has stopped being aggressive, and hurting people, however, it would be a good idea to do some time-in to reconnect. Time-in and time-out are both important tools and we should keep both in our toolkit, using attunement to determine which is needed.</p>
+
+				</article>
+				<article id="monitoring" class="tool">
 					<h3>Monitoring</h3>
 	
 					<p>Monitoring matters. Many studies have shown that when parents supervise activities, and
@@ -228,7 +235,7 @@
 	
 					<p>To find out more, read the section on <a href="">monitoring</a> in the research summary.</p>
 				</article>
-				<article id="preparation">
+				<article id="preparation" class="tool">
 					<h3>Preparation</h3>
 					
 					<p>There’s not much research on this skill, but experience tells us its important. If someone
@@ -261,7 +268,7 @@
 					<p>If you would like to find out more about Temperament, check the <a href="">upcoming events</a> section
 					on the home page for workshops on this topic.</p>
 				</article>
-				<article id="structure">
+				<article id="structure" class="tool">
 					<h3>Structure</h3>
 	
 					<p>Routine, rules, policies, schedules, turns and deadlines are all examples of structure.
@@ -303,7 +310,7 @@
 	
 					<p>To find out more about <a href="">structure</a>, read the research summary.</p>
 				</article>
-				<article id="ritual">
+				<article id="ritual" class="tool">
 					<h3>Ritual</h3>
 	
 					<p>Bed-time stories or songs, birthday cake &amp; candles, special clothes for special occasions,
@@ -318,7 +325,7 @@
 					<p>Teachers: Think of how this can apply in the classroom. How do you greet, say goodbye,
 					celebrate birthdays, welcome newcomers, or start the story-time?</p>
 				</article>
-				<article id="praise">
+				<article id="praise" class="tool">
 					<h3>Praise / Positive Feedback</h3>
 	
 					<p>Two things stand out in research on praise. The one is how important it is for children, the
@@ -362,7 +369,7 @@
 				approach, so we find it useful to teach what we call “containing skills”. What these skills
 				have in common is that in each case the child does not get away with negative behavior.</p>
 
-				<article id="adjusting-freedom">
+				<article id="adjusting-freedom" class="tool">
 					<h3>Adjusting Freedom</h3>
 
 					<p>Children need unconditional love and acceptance, but not unconditional freedom and
@@ -399,12 +406,15 @@
 					rules, or insisting that children play inside for a while because they got up to mischief
 					outside. Another name for a short-term adjustment of freedom is a <a href="">time-out</a>.</p>
 				</article>
-				<article id="time-out">
+				<article id="time-out" class="tool">
 					<h3>Time Out</h3>
 
 					<p>Time-outs are most often used for emaggression and non-compliance. There are two
-					kinds of time-out: <em>exclusionary</em> and <em>non-exclusionary</em>. Research shows that both kinds
-					work well.</p>
+					kinds of time-out: <em>exclusionary</em> and <em>non-exclusionary</em>. Exclusionary timeouts
+					may be necessary in the case of aggression, but in other situations either kind has been
+					shown to work well.</p>
+					
+					<p><strong>Exclusionary Time-outs</strong></p>
 
 					<p>When children do something aggressive, we may need to use an <em>exclusionary</em> time-out
 					(removing them from people they might hurt for a short while). At the point a time-out is
@@ -428,12 +438,12 @@
 					condition needs to be less reinforcing than the time-in environment. Other than this, there is
 					room for a lot of variation in the way time-out is administered. The fact that so many
 					different kinds of time-out have proved effective is good news as it suggests that parents
-					and teachers can tailor them to suit specific children and situations.<br>
+					and teachers can tailor timeouts according to what feels right for them and what best suits the child and situation.<br>
 					Research shows no benefit of a short, verbalized reason before or after time-out in terms of
 					child compliance, but it does suggest that parents and other adults prefer to use them.
-					On the question of whether one should give a warning before time-out: No warning, or one
+					On the question of whether one should give a warning before time-out: Warnings appear to increase aggression. No warning, or one
 					short warning both reduce noncompliance, but more than one warning can increase
-					noncompliance. Warnings appear to increase aggression.<br>
+					noncompliance.<br>
 					There is not enough evidence yet to determine what specific location (e.g., chair, corner, or
 					room) is best (all have been effective), or whether in-room adult supervision is beneficial.
 					There is no evidence base for determining duration according to age. 5 minutes or less is
@@ -442,19 +452,22 @@
 					behavior. It seems best to start with a shorter duration such as 1 or 2 min and increase the
 					length if necessary.<br>
 					Regarding who ends the time-out: one study showed significantly more compliance and
-					less time-outs given with parent-controlled release than with child-controlled release.</p>
+					less time-outs given with parent-controlled release than with child-controlled release.<br>
+					Timeouts in the studies reviewed were implemented calmly, not in a harsh or rejecting manner, and work better in a context where interaction between parent and child is usually of good quality (see <a href="">time-in</a>).</p>
 
-					<p><strong>Some guidelines and suggestions for using time-out</strong></p>
+					<p><strong>Some guidelines and suggestions for using exclusionary time-outs</strong></p>
 
 					<p>Stay calm. If the adult loses control, the conflict may escalate, children will feel less safe
-					and lose sight of what they could learn. Don’t threaten a time out, just give one, or count
-					and then give one. A length of between 1 and 5 min is usually enough – start with less and
+					and lose sight of what they could learn.<br>
+					Don’t threaten a time out, just give one, or count
+					and then give one. (See research on how warnings tend to increase aggression). On the other hand, it can be useful to <a href="">prepare</a> your child at a time they are not out of control, by telling them about time-outs, preparing them that you will be using them, and answering any questions they may have. That way they won’t be shocked when you implement one.<br>
+					A length of between 1 and 5 min is usually enough – start with less and
 					see if you need more. Don’t try to stop a tantrum. Once they have “let it out” they will
 					come back into control. Sometimes children need longer. Check in at the end of the
 					prescribed time. Tell them their time out is finished and then let them stay longer if they
-					need to. If they are still being aggressive, say: “It’s time to come out, but I see you are not
-					ready yet”. Don’t lock them up and abandon them. Stay nearby. It’s fine to reassure a child
-					if they need it e.g. ‘I’m right here.” or “You have only 1 minute left”.</p>
+					want to. If they are still being aggressive, however, say: “It’s time to come out, but I see you are not ready yet”. Use your <a href="">attunement</a>. You may hear that their crying has changed from angry to sad. If they are still crying, but no longer being aggressive, it is better to offer them comfort than extend the time-out. If they are not ready for your comfort they will show you and then you should respect that, letting them know that you are there to comfort them when they are ready.<br>
+					Don’t try to stop a tantrum, let them “let it out”. 
+					Don’t lock them up and abandon them. Stay nearby. It’s also fine to reassure a child if they need it e.g. ‘I’m right here.” or “You have only 1 minute left”.</p>
 
 					<p><em>Reconnect</em>. When they are ready to come out, it’s a good time for hugs and apologies. It
 					may also be a good time to do some active listening about what upset them so much, now
@@ -525,7 +538,7 @@
 					<p><em>Cool down: </em>This is a rest or any calming activity, for children who are getting too
 					physically hyped up. You could think of it as a time-out from running around.</p>
 				</article>
-				<article id="making-amends">
+				<article id="making-amends" class="tool">
 					<h3>Making Amends</h3>
 
 					<p>When they have wronged or inconvenienced someone, children can be
@@ -570,7 +583,7 @@
 					and classrooms too. If you would like to learn more about making amends have a look at
 					the <a href="">restorative justice</a> section of the summary in the research section.</p>
 				</article>
-				<article id="introducing-a-cost">
+				<article id="introducing-a-cost" class="tool">
 					<h3>Introducing a Cost</h3>
 
 					<p>Ask yourself: <em>“Who is counting the cost of this child’s behavior?” Can the cost to everyone
@@ -594,7 +607,7 @@
 					That way the child has the responsibility to make a choice about whether they are prepared
 					to incur the cost or not.</p>
 				</article>
-				<article id="when-then">
+				<article id="when-then" class="tool">
 					<h3>“When-then” Statements</h3>
 
 					<p>Although we found no research on this, workshop feedback shows that parents find this
@@ -618,7 +631,7 @@
 
 				<p>Discipline is based on the word “disciple”.</p>
 
-				<article id="replacement-behaviors">
+				<article id="replacement-behaviors" class="tool">
 					<h3>Replacement Behaviors</h3>
 
 					<p><strong>“Do” rather than “don’t</strong></p>
@@ -705,7 +718,7 @@
 					message from a friend’s phone.”; “Next time you feel like that, please come and tell me so I
 					can be there for you.”</p>
 				</article>
-				<article id="modeling">
+				<article id="modeling" class="tool">
 					<h3>Modeling</h3>
 
 					<p>A child asks for something, forgetting to say “please”. The Parent responds with: “please”
@@ -726,7 +739,7 @@
 					drive, how much time we spend using phones and other devices, etc. Our children are
 					watching us. What are we teaching them?</p>
 				</article>
-				<article id="prompting">
+				<article id="prompting" class="tool">
 					<h3>Prompting</h3>
 
 					<p>Prompting is a tool we can use to guide and remind children to do things. Here are some
@@ -754,7 +767,7 @@
 					least intrusive prompts, depending on what they are trying to achieve. To find out more about
 					this have a look at the <a href="">summary</a> in the research section.</p>
 				</article>
-				<article id="rewind">
+				<article id="rewind" class="tool">
 					<h3>“Rewind”</h3>
 
 					<p>Sometimes it can be constructive to ask the child to do something over again, this time the
@@ -764,7 +777,7 @@
 					receiving praise. We do <em>not</em> mean asking a child to do something over and over as a
 					punishment.</p>
 				</article>
-				<article id="remedial-stories">
+				<article id="remedial-stories" class="tool">
 					<h3>Remedial Stories</h3>
 
 					<p>“Once, there was a little, tiny mouse….” Or: “When I was 14, I liked this girl ...” Stories
@@ -789,7 +802,7 @@
 				</article>
 			</div>
 			<div id="other-tools" class="skill-section">
-				<article id="distraction">
+				<article id="distraction" class="tool">
 					<h3>Distraction</h3>
 
 					<p>To use this skill, get the child’s attention in a creative way and then direct them into the
@@ -820,7 +833,7 @@
 					cannot also use preparation or reassurance, and it does not mean deceiving or tricking the
 					child.</p>
 				</article>
-				<article id="reward">
+				<article id="reward" class="tool">
 					<h3>Reward</h3>
 
 					<p>Some people frown on the use of rewards and call them “bribes”. So let’s clear that up at
@@ -903,7 +916,7 @@
 			<div id="involving-children" class="skill-section">
 				<h2>Engaging and Involving Children More</h2>
 
-				<article id="otr">
+				<article id="otr" class="tool">
 					<h3>Opportunities to Respond (OTR)</h3>
 
 					<p>This is a tool for teachers which involves increasing opportunities for all students to respond,
@@ -924,7 +937,7 @@
 					few students giving accurate answers, while a number of others do not yet understand the
 					concept.</p>
 				</article>
-				<article id="meet-and-solve">
+				<article id="meet-and-solve" class="tool">
 					<h3>Meetings and Problem Solving</h3>
 
 					<p>This tool involves meeting as a family, class, in small groups or
@@ -969,7 +982,7 @@
 					sections of the research summary.</p>
 
 				</article>
-				<article id="self-management">
+				<article id="self-management" class="tool">
 					<h3>Self-Management</h3>
 
 					<p>Self-management involves self-monitoring and usually self-recording of a specific target
@@ -990,8 +1003,8 @@
 				</article>
 			</div>
 			<div id="not-working" class="skill-section">
-				<h2>What if the Skills aren't Working</h2>
-				<article id="report-card">
+				<h2>What if the Skills aren't Working?</h2>
+				<article id="report-card" class="tool">
 					<h3>Daily Behavior Report Card</h3>
 
 					<p>The skills above will work for most children, but some children need more support. For
@@ -1022,7 +1035,7 @@
 				</article>
 			</div>
 		</section>
-		<section id="what-not-to-do">
+		<section id="what-not-to-do" class="tool">
 			<h1>What not to do</h1>
 			<h4>Click each tile to see why</h4>
 			<p>
@@ -1033,10 +1046,129 @@
 				yourself up when you make a mistake or have a bad day.
 			</p>
 			<div id="donts">
-				<!-- 
-				flip tiles with thing on front and reason not to on back
-				same red as tool menu don't section
-				 -->
+				<div class="tile" tabindex="0">
+					<div class="front">Threats</div>
+					<div class="back">
+						<span>It’s coercive</span>
+						<span>It sets a bad example</span>
+						<span>Children will feel less safe with you</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Hitting / Physical Punishment</div>
+					<div class="back">
+						<span>It's assault </span>
+						<span>It’s illegal</span>
+						<span>It hurts children</span>
+						<span>It sets a bad example</span>
+						<span>Many proven negative effects</span>
+						<span>Children will feel less safe with you</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Shouting</div>
+					<div class="back">
+						<span>It’s aggressive</span>
+						<span>It shows you are losing control</span>
+						<span>It’s ineffective</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">The Silent Treatment</div>
+					<div class="back">
+						<span>It’s punitive and mean</span>
+						<span>It can be scary</span>
+						<span>It’s bad for your connection with your child</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Guilt Trips</div>
+					<div class="back">
+						<span>Unnecessary</span>
+						<span>Ineffective</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Shaming</div>
+					<div class="back">
+						<span>Unnecessary</span>
+						<span>Can be damaging</span>
+						<span>Our job is to reassure children when they feel shame, not to <em>make</em> them feel ashamed</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Humiliating</div>
+					<div class="back">
+						<span>Its punitive and cruel</span>
+						<span>Children will feel less safe with you</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Rhetorical Questions</div>
+					<div class="back">
+						<span>Send negative messages</span>
+						<span>Ineffective</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Interrigation</div>
+					<div class="back">
+						<span>Makes children feel unsafe</span>
+						<span>Provokes lies and defensiveness</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Lectures</div>
+					<div class="back">
+						<span>Ineffective</span>
+						<span>Off-putting, annoying and can be hurtful</span>
+						<span>Children switch off</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Criticism</div>
+					<div class="back">
+						<span>Unnecessary</span>
+						<span>Hurtful</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Sarcasm</div>
+					<div class="back">
+						<span>It’s mean</span>
+						<span>It hurts</span>
+						<span>It sets a bad example</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Comparing children to others</div>
+					<div class="back">
+						<span>Ineffective</span>
+						<span>Unnecessary</span>
+						<span>Hurtful</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">A sales pitch on good behavior, with lost of explaining and reasons</div>
+					<div class="back">
+						<span>Ineffective</span>
+						<span>Annoying</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Leaving things up to harmful natural consequences</div>
+					<div class="back">
+						<span>It’s our job to keep children safe. They shouldn’t be finding out about seatbelts, sunblock, dental care etc the hard way</span>
+					</div>
+				</div>
+				<div class="tile" tabindex="0">
+					<div class="front">Using lies and fear</div>
+					<div class="back">
+						<span>It makes children feel less safe</span>
+						<span>Its manipulative</span>
+						<span>It sets a bad example</span>
+					</div>
+				</div>
 			</div>
 		</section>
 		<footer id="footer">

@@ -79,6 +79,13 @@
 	section {
 		width: 100%;
 		padding: 0 3vw;
+		margin: 0 auto 6rem auto;
+	}
+
+	body.pushed {
+		section {
+			margin: 0 auto 6rem auto;
+		}
 	}
 
 	.obfus {

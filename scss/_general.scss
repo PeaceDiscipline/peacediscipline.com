@@ -13,6 +13,9 @@
 	--text-size: 1.6rem;
 	--primary-color: #7FB2B5;
 	--secondary-color: #425E5F;
+	--toolbox-width: 20rem;
+	--left-margin: 0;
+	--right-margin: 0;
 	text-align: center;
 }
 
@@ -31,7 +34,8 @@ h3 {
 section {
 	font-size: var(--text-size);
 	width: 65%;
-	margin: 0 auto 8rem auto;
+	margin: 0 auto 6rem 17.5%;
+	transition: margin 0.5s ease-out;
 }
 
 article {
@@ -59,3 +63,4 @@ a[href=""] {
     height: var(--header-height);
     margin: calc( -1 * var(--header-height)) 0 0;
 }
+

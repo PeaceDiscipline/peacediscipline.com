@@ -1,10 +1,8 @@
 Make events scrolling menu
-update menu on all pages RESOURCES -> RESEARCH | EVENTS -> VIDEOS
 fix clicking email in mobile mode causes tooltip to be positioned wrong
 underline current tab
 
 make menu webcomponent for consistancy
-Animate logo on load (see autohotkey.com)
 Allow tabbing through menu options
 
 About section on the home page about Peace Discipline
@@ -13,11 +11,12 @@ a little infromation about each tab on the home page
 Option to share flyer on events page
 check if download links work once site is live
 fix tabbing not working on tool-buttons
-set thumbnail image to logo oon landing background
+set thumbnail image to logo on landing background
 position adjusting freedom image below in mobile instead of floating
 
 Confirm changing of Other useful skills to other useful tools
-
+Where do you want to put the awareness exercises?
+Time-in text is repetitive
 
 NEXT UPDATE
 - Add stringbean images
