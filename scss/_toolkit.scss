@@ -72,6 +72,7 @@ body.pushed {
 	padding: 1rem;
 	font-size: 1.6rem;
 	font-weight: bold;
+	user-select: none;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;

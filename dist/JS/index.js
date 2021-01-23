@@ -15,7 +15,7 @@ const landingObserver = new IntersectionObserver(function (entries) {
 landingObserver.observe(landing);
 
 // ############################################## CHANGING QUOTE #############################################
-// fetch("../../resources/quotes.json")
+// fetch("../resources/quotes.json")
 // 	.then(res => res.json())
 // 	.then(data => {
 // 		const quote = document.querySelector("#quote");

@@ -1,5 +1,13 @@
+SCROLLING NOT WORKING PROPERLY ON CHROME
+UGLY SELECTION HIGHLIGHT ON CHROME
+DOWNLOAD BUTTONS STILL NOT WORKING
+WEBSITE NOT SECURE
+MAKE EVENT FLIER MOBILE MODAL BIGGER
+MAKE LINKED HEADINGS KEEP THEIR COLOR
+FIGURE OUT WHY HOME PAGE HEADER IS BLUE
+
+
 Make events scrolling menu
-fix clicking email in mobile mode causes tooltip to be positioned wrong
 scroll button menu when clicked
 
 make menu webcomponent for consistancy
