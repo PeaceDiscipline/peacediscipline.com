@@ -36,7 +36,7 @@ let i = 0;
 setInterval(() => {
 	quote.textContent = quotes[i];
 	i = (i + 1) % quotes.length;
-}, 8000);
+}, 7000);
 // ############################################### FLIER MODAL ###############################################
 const modal = document.querySelector("#modal");
 const modalFlier = modal.querySelector("#modal-flier");

@@ -13,7 +13,6 @@ scroll button menu when clicked
 make menu webcomponent for consistancy
 Allow tabbing through menu options
 
-check if download links work once site is live
 fix tabbing not working on tool-buttons
 
 NEXT UPDATE
