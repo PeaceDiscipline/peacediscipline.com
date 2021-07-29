@@ -57,13 +57,32 @@
 			<h1 class="title">Peace Discipline</h1>
 			<span id="quote">Help peace go viral</span>
 		</div>
-		<a href="#about-pd"><img id="down-arrow" src="images/bouncing arrow.svg" alt="down arrow"></a>
+		<a href="#mailing-list"><img id="down-arrow" src="images/bouncing arrow.svg" alt="down arrow"></a>
 	</main>
+	<section id="mailing-list">
+		<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post" target="_blank">
+			<em><h4>Get notified of new videos and upcoming events</h4></em>
+			<!-- Name -->
+			<label for="name-input">Name: </label>
+			<input type="text" id="name-input" name="name" placeholder="Name"/>
+			<!-- Email field (required) -->
+			<label for="email-input">Email: </label>
+			<input type="text" id="email-input" name="email" placeholder="Email"/>
+			<!-- List token -->
+			<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
+			<input type="hidden" name="campaign_token" value="otzvB" />
+			<!-- Subscriber button -->
+			<input type="submit" id="sub-to-mailing-list" value="Go!"/>
+		</form>
+	</section>
 	<section id="about-pd">
 		<h1>About Peace Discipline</h1>
 
-		<q><em>When the only tool one has is a hammer,<br>one tends to treat everything as if it’s a nail.</em></q>
-		<span>~ Abraham Maslow</span>
+		<div class="quote">
+			<q><em>When the only tool one has is a hammer,<br>one tends to treat everything as if it’s a nail.</em></q>
+			<br>
+			<span>~ Abraham Maslow</span>
+		</div>
 		<br><br>
 		<p>Peace discipline started in 2004 and ran for 16 years as a series of workshops teaching non-
 			violent discipline options for parents, teachers and others caring for children. The
@@ -117,8 +136,8 @@
 	<section id="events">
 		<h1>Upcoming Events</h1>
 		<div id="upcoming">
-			<img class="flier" src="resources/Boundaries With Adolescents-1.png" alt="flier-1">
-			<img class="flier" src="resources/Temperament Webinars.png" alt="flier-2">
+			<!-- <img class="flier" src="resources/Boundaries With Adolescents-1.png" alt="flier-1"> -->
+			<img class="flier" src="resources/Peace Discipline Online Aug-Sept 2021.png" alt="flier-2">
 		</div>
 		<div id="coaching">
 			<h3>Coaching</h3>
@@ -152,7 +171,7 @@
 			<strong>Content:</strong> Karen Quail<br>
 			<strong>Website:</strong> Mikha Davids<br>
 			<strong>Research:</strong> Karen Quail (principal researcher)<br>
-			Catherine Ward (Supervisor)<br>
+			Catherine Ward (supervisor)<br>
 			Ayabonga Timakwe (research assistant)<br>
 			Stijn de Leeuw (research assistant)<br>
 			Tamsyn Naylor (research assistant)<br>

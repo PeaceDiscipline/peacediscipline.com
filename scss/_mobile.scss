@@ -41,6 +41,22 @@
 			text-align: center;
 		}
 	}
+	#mailing-list {
+		input[type="text"] {
+			display: block;
+			margin: 0 auto 1rem auto;
+			width: calc(min(35rem, 80%));
+		}
+		#email-input {
+			margin: 0 auto 1rem auto;
+			border-radius: 2rem;
+			width: calc(min(35rem, 80%));
+		}
+		#sub-to-mailing-list {
+			border-radius: 2rem;
+			width: calc(min(35rem, 80%));
+		}
+	}
 	#burger {
 		display: block;
 	}
@@ -105,5 +121,14 @@
 
 	.credit {
 		justify-content: center;
+	}
+
+	.video {
+		display: flex;
+		justify-content: center;
+		background-color: transparent;
+		.description {
+			display: none;
+		}
 	}
 }

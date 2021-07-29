@@ -58,7 +58,7 @@ body.pushed {
 	width: 100%;
 	// maybe make this a fraction of toolbox height
 	height: 15rem;
-	background-color: hsl(44, 40%, 56%);
+	background-color: var(--gold);
 	.tool-button {
 		height: 11rem;
 	}

@@ -1,21 +1,53 @@
-#videos {
-	min-height: 65vh;
-}
-
 .video {
+	// border: 2px solid #e2e2e2;
+	background-color: #ADADAD;
 	display: grid;
-	margin: 3rem 0;
-	gap: 2rem;
+	padding: 1rem;
+	margin: 2rem 0;
+	gap: 1.5rem;
 	grid-template-columns: 1fr 3fr;
+	cursor: pointer;
+	transition: all ease-in-out 0.1s;
+
+	&:hover {
+		scale: 1.05;
+		// box-shadow: 0 0 0.5rem 2px rgba(0, 0, 0, 0.5);
+	}
+	
 	.description {
 		display: flex;
 		justify-content: baseline;
+		pointer-events: none;
 		align-items: center;
-		font-size: 2rem;
+		font-size: clamp(1.5rem, 1.5vw, 2rem);
 		text-align: left;
 	}
-	iframe {
+	.thumbnail {
+		object-fit: cover;
+		pointer-events: none;
 		width: 30rem;
 		height: 16rem;
+	}
+}
+
+#video-modal {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 101;
+	position: fixed;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+
+	iframe {
+		width: 57vw;
+		height: 32vw;
+	}
+
+	&.hidden {
+		display: none;
 	}
 }

@@ -9,6 +9,48 @@ h4 {
 	margin-bottom: 1.5rem;
 }
 
+#mailing-list {
+	text-align: center;
+	background-color: var(--gold);
+	width: 100%;
+	margin: 0;
+	padding: calc(var(--header-height) + 2rem) 2rem 2rem 2rem;
+	input[type="text"] {
+		height: 4rem;
+		width: calc(min(30rem, 20%));
+		padding: 0 2rem;
+		border-radius: 2rem;
+		border: solid black 1px;
+	}
+	#email-input {
+		width: calc(min(40rem, 25%));
+		margin-left: 1rem;
+		border-radius: 2rem 0 0 2rem;
+	}
+	label {
+		// labels exist for accessability
+		display: none;
+	}
+	h4 {
+		color: black;
+		text-transform: uppercase;
+		margin-bottom: 1rem;
+	}
+	#sub-to-mailing-list {
+		cursor: pointer;
+		background-color: black;
+		border: none;
+		height: 4rem;
+		padding: 0 2rem;
+		border-radius: 0 2rem 2rem 0;
+		color: white;
+		font-weight: 600;
+		&:active {
+			scale: 0.9;
+		}
+	}
+}
+
 #upcoming {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));

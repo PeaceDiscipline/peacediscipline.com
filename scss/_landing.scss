@@ -10,6 +10,7 @@
 	padding: 5vw;
 	position: relative;
 	z-index: 1;
+	margin-bottom: calc( -1 * var(--header-height));
 
 	#landing-text {
 		height: 25vw;
