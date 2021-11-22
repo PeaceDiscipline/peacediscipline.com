@@ -1,6 +1,8 @@
 name: Update Website Via SSH
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -17,8 +19,9 @@ jobs:
         REMOTE_USER: ${{ secrets.REMOTE_USER }}
         ARGS: -rltgoDzvO --filter='-r_.htaccess' --filter='-r_/.well-known' --delete
         SOURCE: dist/
-        TARGET: ~/testing/public_html
+        TARGET: ~/public_html
 
+############################################## rsync parameters ##############################################
 # -rltgoDzvO
 # r   Recurse into directories
 # l   Copy symlinks as symlinks
@@ -30,4 +33,6 @@ jobs:
 # v   Increase verbosity
 # O   ?
 
-# --delete    Delete files that don't exist on the sending side
+# --delete                     Delete files that don't exist on the sending side
+# --filter='-r_.htaccess'      Prevent .htaccess file on server from being deleted, despite it not being in the SOURCE
+# --filter='-r_/.well-known'   Prevent /.well-known dir on server from being deleted, despite it not being in the SOURCE
