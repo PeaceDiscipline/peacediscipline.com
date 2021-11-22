@@ -1,0 +1,33 @@
+name: Update Website Via SSH
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ssh-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Deploy with SSH
+      uses: easingthemes/ssh-deploy@v2
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SSH_KEY }}
+        REMOTE_HOST: peacediscipline.com
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        ARGS: -rltgoDzvO --filter='-r_.htaccess' --filter='-r_/.well-known' --delete
+        SOURCE: dist/
+        TARGET: ~/testing/public_html
+
+# -rltgoDzvO
+# r   Recurse into directories
+# l   Copy symlinks as symlinks
+# t   Preserve times
+# g   Preserve group
+# o   Preserve owner (super-user only)
+# D   Preserve devices (super-user only) +files
+# z   Compress file data during the transfer
+# v   Increase verbosity
+# O   ?
+
+# --delete    Delete files that don't exist on the sending side
