@@ -33,17 +33,21 @@ body.pushed {
 	// same as attunement height
 	padding-top: 15rem;
 	overflow-y: auto;
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+	-ms-overflow-style: none;
+	/* IE and Edge */
+	scrollbar-width: none;
+
+	/* Firefox */
 	/* Hide scrollbar for Chrome, Safari and Opera */
 	&::-webkit-scrollbar {
 		display: none;
-	  }
+	}
 
 	.dont-use {
 		background-color: hsl(0, 50%, 56%);
 		width: 100%;
 		padding: 0.1rem 0;
+
 		.tool-button {
 			height: 12rem;
 		}
@@ -59,6 +63,7 @@ body.pushed {
 	// maybe make this a fraction of toolbox height
 	height: 15rem;
 	background-color: var(--gold);
+
 	.tool-button {
 		height: 11rem;
 	}
@@ -81,7 +86,10 @@ body.pushed {
 	margin: 2rem auto;
 	cursor: pointer;
 	transition: all 0.2s;
-	&.focus, &:hover, &:focus {
+
+	&.focus,
+	&:hover,
+	&:focus {
 		transform: scale(1.08);
 		box-shadow: 0.2rem 0.2rem 0.5rem 0 #00000066;
 		outline: none;
@@ -101,10 +109,13 @@ body.pushed {
 	border: var(--grey) solid 0.6rem;
 	width: 90%;
 	margin: 0 auto;
-	h1, h3 {
+
+	h1,
+	h3 {
 		text-transform: uppercase;
 		margin: 2rem;
 	}
+
 	p {
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		margin: 0.5rem 0;
@@ -123,6 +134,7 @@ body.pushed {
 	margin: 2rem auto;
 	width: 90%;
 	text-align: left;
+
 	li {
 		margin: 1rem 0;
 	}
@@ -130,8 +142,9 @@ body.pushed {
 
 #donts {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
 	gap: 1.5rem;
+
 	.tile {
 		color: white;
 		width: 100%;
@@ -142,9 +155,12 @@ body.pushed {
 		transform-style: preserve-3d;
 		transition: scale 0.2s;
 
-		div	{
+		div {
 			position: absolute;
-			top: 0; right: 0; bottom: 0; left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
 			backface-visibility: hidden;
 			transition: transform 0.8s ease-in-out;
 			background-color: hsl(0, 50%, 56%);
@@ -166,18 +182,27 @@ body.pushed {
 				margin: 1.5rem;
 				content: "Why Not:";
 			}
+
 			span {
 				display: block;
 				margin: 1rem 0;
 			}
+
 			transform: rotateY(-180deg);
 		}
 
-		&:hover { scale: 1.05; }
+		&:hover {
+			scale: 1.05;
+		}
 
 		&:focus {
-			.front { transform: rotateY(180deg) }
-			.back { transform: rotateY(0deg) }
+			.front {
+				transform: rotateY(180deg)
+			}
+
+			.back {
+				transform: rotateY(0deg)
+			}
 		}
 	}
 }

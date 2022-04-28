@@ -9,7 +9,7 @@ const landingObserver = new IntersectionObserver(function (entries) {
 		} else {
 			header.classList.remove("top");
 		}
-	})
+	});
 }, options);
 
 landingObserver.observe(landing);
@@ -28,8 +28,7 @@ landingObserver.observe(landing);
 const quotes = [
 	"Learn about non-violent discipline",
 	"Children need to feel safe with us",
-	"Help peace go viral"
-] 
+];
 
 const quote = document.querySelector("#quote");
 let i = 0;
@@ -51,5 +50,5 @@ function closeModal() {
 }
 
 for (let i of document.querySelectorAll(".flier")) {
-	i.addEventListener("click", expandFlier)
+	i.addEventListener("click", expandFlier);
 }
