@@ -8,15 +8,21 @@ footer {
 	user-select: none;
 	font-weight: bold;
 	text-align: center;
+
 	.based {
 		font-size: clamp(1.2rem, 1.8rem, 1vw);
 		margin-bottom: 1.5rem;
 	}
-	.contact { font-size: clamp(1.5rem, 2.2rem, 1.4vw); }
+
+	.contact {
+		font-size: clamp(1.5rem, 2.2rem, 1.4vw);
+	}
+
 	.obfus {
 		unicode-bidi: bidi-override;
 		direction: rtl;
 		cursor: pointer;
+
 		&:hover {
 			text-decoration: underline;
 		}
@@ -32,43 +38,57 @@ footer {
 	font-family: Arial, Helvetica, sans-serif;
 	width: 100%;
 	padding: 0.8rem;
+
 	.logo {
 		height: 2.5rem;
 		width: 2.5rem;
 		margin: 0 0.8rem;
+
 		#cutout {
 			fill: var(--secondary-color);
 		}
-		&:hover {
-			#cog {
-				animation: cog 2s ease-out;
-				transform-origin: center;
-				transform-box: fill-box;
-			}
-			#cutout {
-				opacity: 100%;
-				transform: translateX(-100%);
-				animation: cutout 1s 0.8s ease-out;
-				animation-fill-mode: forwards;
-			}
-			#m {
-				opacity: 0%;
-				animation: m 0.8s 1.8s ease-in-out;
-				animation-fill-mode: forwards;
-			}
+	}
+
+	&:hover {
+		#cog {
+			animation: cog 2s ease-out;
+			transform-origin: center;
+			transform-box: fill-box;
+		}
+
+		#cutout {
+			opacity: 100%;
+			transform: translateX(-100%);
+			animation: cutout 1s 0.8s ease-out;
+			animation-fill-mode: forwards;
+		}
+
+		#m {
+			opacity: 0%;
+			animation: m 0.8s 1.8s ease-in-out;
+			animation-fill-mode: forwards;
 		}
 	}
 }
 
 @keyframes cog {
-	from { transform: rotate(0deg);	}
-	to { transform: rotate(180deg);	}
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(180deg);
+	}
 }
 
 @keyframes cutout {
-	to { transform: translateX(0%);	}
+	to {
+		transform: translateX(0%);
+	}
 }
 
 @keyframes m {
-	to { opacity: 100%;	}
+	to {
+		opacity: 100%;
+	}
 }
