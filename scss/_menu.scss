@@ -5,6 +5,7 @@
 }
 
 header {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	--header-opacity: 1;
 	z-index: 100;
 	position: fixed;
@@ -29,11 +30,13 @@ header {
 		display: flex;
 		opacity: var(--header-opacity);
 		transition: all 0.5s;
-}
+	}
+
 	.logo {
 		height: 100%;
 		padding: 0.6rem 0;
 	}
+
 	.title {
 		padding-left: 1rem;
 		margin: auto 0;
@@ -54,6 +57,7 @@ header.top {
 	display: flex;
 	justify-content: space-between;
 	list-style: none;
+
 	.item {
 		color: white;
 		text-decoration: none;
@@ -82,12 +86,14 @@ header.top {
 	flex-direction: column;
 	background-color: rgb(127, 178, 181);
 	text-transform: capitalize;
+
 	a {
 		display: inline-block;
 		text-decoration: none;
 		color: white;
 		font-size: 1.5rem;
 		padding: 1rem;
+
 		&:hover {
 			background-color: #60888a;
 		}
@@ -98,7 +104,8 @@ header.top {
 	display: flex;
 }
 
-#burger, #close-menu {
+#burger,
+#close-menu {
 	display: none;
 	height: 3rem;
 	cursor: pointer;
