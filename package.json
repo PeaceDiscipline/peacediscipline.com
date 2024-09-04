@@ -4,6 +4,7 @@
   "description": "The source code for peacediscipline.com",
   "main": "index.js",
   "private": "true",
+  "type": "module",
   "scripts": {},
   "repository": {
     "type": "git",
