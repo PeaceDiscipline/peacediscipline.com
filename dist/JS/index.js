@@ -4,6 +4,7 @@ async function onSubmit(token) {
 		method: "POST",
 		body: token
 	});
+	console.log(token);
 	const body = await response.json();
 	console.log(body);
 	if (body.success) {

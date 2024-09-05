@@ -15,7 +15,3 @@ export async function POST(request) {
 		return new Response(error.message, { status: 400 });
 	}
 }
-
-export const config = {
-	runtime: 'edge',
-};
