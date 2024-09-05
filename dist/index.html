@@ -9,6 +9,8 @@
 	<link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
 	<script src="JS/index.js" defer></script>
 	<script src="JS/general.js" defer></script>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 	<meta name="author" content="MikhaD">
 	<meta name="title" content="Peace Discipline">
@@ -82,11 +84,11 @@
 		<a href="#mailing-list"><img id="down-arrow" src="images/bouncing arrow.svg" alt="down arrow"></a>
 	</main>
 	<section id="mailing-list">
-		<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post"
+		<em>
+			<h4>Get notified of new videos and upcoming events</h4>
+		</em>
+		<form action="https://app.getresponse.com/add_subscribear.html" accept-charset="utf-8" method="post"
 			target="_blank">
-			<em>
-				<h4>Get notified of new videos and upcoming events</h4>
-			</em>
 			<!-- Name -->
 			<label for="name-input">Name: </label>
 			<input type="text" id="name-input" name="name" placeholder="Name" />
@@ -97,7 +99,8 @@
 			<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
 			<input type="hidden" name="campaign_token" value="otzvB" />
 			<!-- Subscriber button -->
-			<input type="submit" id="sub-to-mailing-list" value="Go!" />
+			<button id="sub-to-mailing-list" class="g-recaptcha" data-sitekey="6LdjhzcqAAAAAJ7_hh2COBjjsFWae5HxAfruhRi1"
+				data-callback="onSubmit">Go!</button>
 		</form>
 	</section>
 	<section id="about-pd">

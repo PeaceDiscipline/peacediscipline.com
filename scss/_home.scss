@@ -22,6 +22,10 @@ h4 {
 		border-radius: 2rem;
 		border: solid black 1px;
 	}
+	form {
+		display: flex;
+		justify-content: center;
+	}
 	#email-input {
 		width: calc(min(40rem, 25%));
 		margin-left: 1rem;

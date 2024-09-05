@@ -1,8 +1,21 @@
+// ################################################ RECAPTCHA ################################################
+async function onSubmit(token) {
+	const response = await fetch("/api/verify_recaptcha", {
+		method: "POST",
+		body: token
+	});
+	const body = await response.json();
+	console.log(body);
+	if (body.success) {
+		document.querySelector("#mailing-list form").submit();
+	}
+}
+
 // ########################################### HOME PAGE MENU FADE ###########################################
 const options = {
 	threshold: 1
 };
-const landingObserver = new IntersectionObserver(function (entries) {
+const landingObserver = new IntersectionObserver(function(entries) {
 	entries.forEach(entry => {
 		if (entry.isIntersecting) {
 			header.classList.add("top");
