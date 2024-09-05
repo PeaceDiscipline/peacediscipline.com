@@ -3,14 +3,18 @@
  */
 export async function POST(request) {
 	try {
-		const { token } = await request.json();
 		const response = await fetch("https://www.google.com/recaptcha/api/siteverify", {
 			method: "POST",
-			body: JSON.stringify({ response: token, secret: process.env.RECAPTCHA_KEY }),
+			headers: {
+                "Content-Type": "application/x-www-form-urlencoded"
+            },
+			body: new URLSearchParams({
+				secret: process.env.RECAPTCHA_KEY,
+				response: await request.text()
+			}),
 
 		});
-		const response_json = await response.json();
-		return new Response(JSON.stringify({...response_json, token}));
+		return new Response(await response.text());
 
 	} catch (error) {
 		return new Response(error.message, { status: 400 });

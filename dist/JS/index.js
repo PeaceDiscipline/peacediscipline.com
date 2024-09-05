@@ -2,7 +2,10 @@
 async function onSubmit(token) {
 	const response = await fetch("/api/verify_recaptcha", {
 		method: "POST",
-		body: JSON.stringify({ token }),
+		headers: {
+			"Content-Type": "text/plain"
+		},
+		body: token,
 	});
 	const body = await response.json();
 	console.log(token);
