@@ -3,7 +3,11 @@
  */
 export async function POST(request) {
 	return new Response(JSON.stringify({
-		test_secret: process.env.TEST_SECRET,
+		s: `Test env: ${process.env.TEST_KEY}`,
 		region: process.env.VERCEL_REGION
 	}));
 }
+
+export const config = {
+	runtime: 'edge',
+};
