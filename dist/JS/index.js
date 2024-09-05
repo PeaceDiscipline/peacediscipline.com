@@ -2,10 +2,10 @@
 async function onSubmit(token) {
 	const response = await fetch("/api/verify_recaptcha", {
 		method: "POST",
-		body: token
+		body: JSON.stringify({ token }),
 	});
-	console.log(token);
 	const body = await response.json();
+	console.log(token);
 	console.log(body);
 	if (body.success) {
 		document.querySelector("#mailing-list form").submit();
