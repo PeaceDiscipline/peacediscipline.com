@@ -5,9 +5,9 @@ async function onSubmit(token) {
 		body: token
 	});
 	console.log(token);
-	const body = await response.json();
+	const body = await response.text();
 	console.log(body);
-	if (body.success) {
+	if (JSON.parse(body).success) {
 		document.querySelector("#mailing-list form").submit();
 	}
 }
