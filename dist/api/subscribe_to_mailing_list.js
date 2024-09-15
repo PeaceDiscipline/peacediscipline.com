@@ -61,7 +61,9 @@ async function verify_captcha(token) {
 			}),
 
 		});
-		return await response.json().success;
+		const data = await response.json();
+		console.log(data);
+		return data.success;
 
 	} catch (error) {
 		console.log(error);

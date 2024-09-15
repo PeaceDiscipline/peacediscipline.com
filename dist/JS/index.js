@@ -32,6 +32,7 @@ async function onSubmit() {
 }
 
 async function onCaptcha(token) {
+	console.log(token);
 	onSubmit();
 }
 
