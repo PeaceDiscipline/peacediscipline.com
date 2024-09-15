@@ -1,9 +1,8 @@
 // ############################################## NOTIFICATIONS ##############################################
 const notifications = document.querySelector("#notifications");
-/**
- * @type {HTMLFormElement}
- */
+/** @type {HTMLFormElement} */
 const form = document.querySelector("#subscribe-to-mailing-list");
+const submit = form.querySelector("#sub-to-mailing-list");
 
 function notification(title, message, status) {
 	const notification = document.createElement('notification-element');
@@ -18,9 +17,9 @@ function notification(title, message, status) {
 }
 
 // ################################################### FORM ##################################################
-async function onSubmit(token) {
+async function onSubmit() {
 	const data = new FormData(form);
-	data.append("g-recaptcha-response", token);
+	if (!data.get("g-recaptcha-response")) return;
 	const response = fetch(form.action, {
 		method: form.method,
 		body: data,
@@ -28,7 +27,15 @@ async function onSubmit(token) {
 	const result = await response;
 	const body = await result.json();
 	notifications.appendChild(notification(body.response, body.message, result.status));
+	form.querySelector("input[name='name']").value = "";
+	form.querySelector("input[name='email']").value = "";
 }
+
+async function onCaptcha(token) {
+	onSubmit();
+}
+
+submit.addEventListener("click", onSubmit);
 
 // ########################################### HOME PAGE MENU FADE ###########################################
 const options = {
@@ -47,16 +54,6 @@ const landingObserver = new IntersectionObserver(function(entries) {
 landingObserver.observe(landing);
 
 // ############################################## CHANGING QUOTE #############################################
-// fetch("../resources/quotes.json")
-// 	.then(res => res.json())
-// 	.then(data => {
-// 		const quote = document.querySelector("#quote");
-// 		let i = 0;
-// 		setInterval(() => {
-// 			quote.textContent = data["quotes"][i];
-// 			i = (i + 1) % data["quotes"].length;
-// 		}, 8000);
-// 	});
 const quotes = [
 	"Learn about non-violent discipline",
 	"Children need to feel safe with us",
