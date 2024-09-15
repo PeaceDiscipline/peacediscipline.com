@@ -7,6 +7,7 @@
 	<link rel="img_src" href="images/thumbnail.png">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+	<script src="JS/notification.js" defer></script>
 	<script src="JS/index.js" defer></script>
 	<script src="JS/general.js" defer></script>
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -87,18 +88,13 @@
 		<em>
 			<h4>Get notified of new videos and upcoming events</h4>
 		</em>
-		<form action="https://app.getresponse.com/add_subscriber.html" accept-charset="utf-8" method="post"
+		<form id="subscribe-to-mailing-list" action="/api/subscribe_to_mailing_list" accept-charset="utf-8" method="post"
 			target="_blank">
-			<!-- Name -->
 			<label for="name-input">Name: </label>
 			<input type="text" id="name-input" name="name" placeholder="Name" />
-			<!-- Email field (required) -->
 			<label for="email-input">Email: </label>
 			<input type="text" id="email-input" name="email" placeholder="Email" />
-			<!-- List token -->
-			<!-- Get the token at: https://app.getresponse.com/campaign_list.html -->
-			<input type="hidden" name="campaign_token" value="otzvB" />
-			<!-- Subscriber button -->
+			</label>
 			<button id="sub-to-mailing-list" type="button" class="g-recaptcha" data-sitekey="6LdjhzcqAAAAAJ7_hh2COBjjsFWae5HxAfruhRi1"
 				data-callback="onSubmit">Go!</button>
 		</form>
@@ -233,6 +229,7 @@
 			<img id="modal-flier" src="" alt="flier">
 		</div>
 	</div>
+	<div id="notifications"></div>
 </body>
 
 </html>

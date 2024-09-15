@@ -1,18 +1,39 @@
+const notifications = document.querySelector("#notifications");
+/**
+ * @type {HTMLFormElement}
+ */
+const form = document.querySelector("#subscribe-to-mailing-list");
+
+function notification(status, title, message, type="success") {
+	const notification = document.createElement('notification-element');
+	notification.setAttribute('status', status);
+	notification.setAttribute('title', title);
+	notification.setAttribute('message', message);
+	notification.setAttribute('type', type)
+	return notification;
+}
+// notifications.appendChild(notification(
+// 	429,
+// 	'Too many requests!',
+// 	'We are experiencing high loads at the moment. Please wait a few minutes and try again.',
+// 	'error'
+// ));
+// notifications.appendChild(notification(
+// 	202,
+// 	'Success!',
+// 	'You have successfully subscribed!'
+// ));
+
 // ################################################ RECAPTCHA ################################################
 async function onSubmit(token) {
-	const response = await fetch("/api/verify_recaptcha", {
-		method: "POST",
-		headers: {
-			"Content-Type": "text/plain"
-		},
-		body: token,
-	});
-	const body = await response.json();
 	console.log(token);
-	console.log(body);
-	if (body.success) {
-		document.querySelector("#mailing-list form").submit();
-	}
+	const response = fetch(form.action, {
+		method: form.method,
+		body: new FormData(form)
+	});
+	const result = await response;
+	const data = await result.json();
+	notifications.appendChild(notification(data.response, data.message, result.status));
 }
 
 // ########################################### HOME PAGE MENU FADE ###########################################
