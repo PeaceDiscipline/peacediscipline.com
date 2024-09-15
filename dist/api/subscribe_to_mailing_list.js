@@ -3,7 +3,6 @@ export const config = { runtime: "edge" };
 /** @param {Request} request */
 export async function POST(request) {
 	const data = await request.formData();
-	console.log(data);
 	const name = data.get("name");
 	const email = data.get("email")?.toLowerCase();
 	const token = data.get("g-recaptcha-response");

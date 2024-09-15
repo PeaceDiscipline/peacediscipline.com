@@ -1,39 +1,34 @@
+// ############################################## NOTIFICATIONS ##############################################
 const notifications = document.querySelector("#notifications");
 /**
  * @type {HTMLFormElement}
  */
 const form = document.querySelector("#subscribe-to-mailing-list");
 
-function notification(status, title, message, type="success") {
+function notification(title, message, status) {
 	const notification = document.createElement('notification-element');
 	notification.setAttribute('status', status);
 	notification.setAttribute('title', title);
 	notification.setAttribute('message', message);
 	notification.setAttribute('type', type)
+	if (status >= 200 && status < 300) {
+		notification.setAttribute('type', "success");
+	}
+	notification.setAttribute('type', "error");
 	return notification;
 }
-// notifications.appendChild(notification(
-// 	429,
-// 	'Too many requests!',
-// 	'We are experiencing high loads at the moment. Please wait a few minutes and try again.',
-// 	'error'
-// ));
-// notifications.appendChild(notification(
-// 	202,
-// 	'Success!',
-// 	'You have successfully subscribed!'
-// ));
 
-// ################################################ RECAPTCHA ################################################
+// ################################################### FORM ##################################################
 async function onSubmit(token) {
-	console.log(token);
+	const data = new FormData(form);
+	data.append("g-recaptcha-response", token);
 	const response = fetch(form.action, {
 		method: form.method,
-		body: new FormData(form)
+		body: data,
 	});
 	const result = await response;
-	const data = await result.json();
-	notifications.appendChild(notification(data.response, data.message, result.status));
+	const body = await result.json();
+	notifications.appendChild(notification(body.response, body.message, result.status));
 }
 
 // ########################################### HOME PAGE MENU FADE ###########################################
