@@ -22,7 +22,7 @@ export async function POST(request) {
 	}
 	if (!(await verify_captcha(token))) {
 		console.warn(`Invalid captcha token: name: ${name}, email: ${email}, ip address: ${ip_address}`);
-		return response("Invalid captcha token", "Don't be suspicious.", 400);
+		return response("Invalid captcha token", "Refresh the page to try again.", 400);
 	}
 	const status = await send_to_getresponse(name, email, ip_address);
 	switch (status) {

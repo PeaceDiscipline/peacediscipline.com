@@ -9,10 +9,9 @@ function notification(title, message, status) {
 	notification.setAttribute('status', status);
 	notification.setAttribute('title', title);
 	notification.setAttribute('message', message);
-	if (status >= 200 && status < 300) {
-		notification.setAttribute('type', "success");
+	if (status < 200 || status >= 300) {
+		notification.setAttribute('type', "error");
 	}
-	notification.setAttribute('type', "error");
 	return notification;
 }
 
