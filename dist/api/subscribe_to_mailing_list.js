@@ -21,7 +21,7 @@ export async function POST(request) {
 		return response("Invalid name", "Please use a name that does not contain numbers.", 400);
 	}
 	if (!(await verify_captcha(token))) {
-		console.warn(`Invalid captcha token: name: ${name}, email: ${email}, ip address: ${ip_address}, token: ${token}`);
+		console.warn(`Invalid captcha token: name: ${name}, email: ${email}, ip address: ${ip_address}`);
 		return response("Invalid captcha token", "Don't be suspicious.", 400);
 	}
 	const status = await send_to_getresponse(name, email, ip_address);
@@ -93,7 +93,7 @@ async function send_to_getresponse(name, email, ip_address=null) {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",
-				"X-Auth-Token": process.env.GETRESPONSE_API_KEY
+				"X-Auth-Token": `api-key ${process.env.GETRESPONSE_API_KEY}`
 			},
 			body: JSON.stringify(body)
 		});
